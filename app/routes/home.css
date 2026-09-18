@@ -1,0 +1,19 @@
+#rr-logo-light {
+  display: none;
+
+  max-width: 20rem;
+}
+#rr-logo-dark {
+  display: block;
+
+  max-width: 20rem;
+}
+
+@media (prefers-color-scheme: light) {
+  #rr-logo-light {
+    display: block;
+  }
+  #rr-logo-dark {
+    display: none;
+  }
+}
