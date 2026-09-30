@@ -1,19 +1,19 @@
-#rr-logo-light {
+#tumblr-logo-black {
   display: none;
 
   max-width: 20rem;
 }
-#rr-logo-dark {
+#tumblr-logo-white {
   display: block;
 
   max-width: 20rem;
 }
 
 @media (prefers-color-scheme: light) {
-  #rr-logo-light {
+  #tumblr-logo-black {
     display: block;
   }
-  #rr-logo-dark {
+  #tumblr-logo-white {
     display: none;
   }
 }
