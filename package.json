@@ -2,7 +2,7 @@
   "name": "maxcodes-dev-github-io",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@12.5.0",
+  "packageManager": "pnpm@12.8.1",
   "devEngines": {
     "runtime": {
       "name": "node",
@@ -20,6 +20,7 @@
     "@react-router/node": "^8.4.0",
     "@react-router/serve": "^8.4.0",
     "isbot": "^5.1.36",
+    "lucide-react": "^1.48.0",
     "react": "^19.2.8",
     "react-aria-components": "^1.21.1",
     "react-dom": "^19.2.8",
@@ -32,6 +33,7 @@
     "@types/react-dom": "^19.2.7",
     "new-component": "^6.0.0",
     "typescript": "^5.9.3",
-    "vite": "^8.0.3"
+    "vite": "^8.0.3",
+    "vite-plugin-devtools-json": "^1.1.0"
   }
 }
