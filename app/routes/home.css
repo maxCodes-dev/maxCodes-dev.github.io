@@ -1,19 +1,29 @@
-#tumblr-logo-black {
-  display: none;
+img[class^="tumblr-icon"] {
+  height: 1lh;
+  vertical-align: top;
+  margin-inline: 0.5em;
 
-  max-width: 20rem;
-}
-#tumblr-logo-white {
-  display: block;
-
-  max-width: 20rem;
-}
-
-@media (prefers-color-scheme: light) {
-  #tumblr-logo-black {
-    display: block;
-  }
-  #tumblr-logo-white {
+  &.tumblr-icon-black {
     display: none;
+  }
+  &.tumblr-icon-white {
+    display: inline-block;
+  }
+
+  @media (prefers-color-scheme: light) {
+    &.tumblr-icon-black {
+      display: inline-block;
+    }
+    &.tumblr-icon-white {
+      display: none;
+    }
+  }
+}
+
+ul#socials-list {
+  list-style: none;
+
+  img[class*="icon"] {
+    margin-inline-start: 0;
   }
 }

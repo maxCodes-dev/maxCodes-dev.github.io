@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home";
 
-// import rrLogoDark from "@/assets/rr-logo-dark.svg";
-// import rrLogoLight from "@/assets/rr-logo-light.svg";
+// import rrIconDark from "@/assets/rr-icon-dark.svg";
+// import rrIconLight from "@/assets/rr-icon-light.svg";
 import tumblrLogoWhite from "@/assets/tumblr-logo-white.png";
 import tumblrLogoBlack from "@/assets/tumblr-logo-black.png";
 
@@ -27,9 +27,21 @@ export default function Home() {
         Technical School. I'm interested in programming and video games.
       </p>
       <h2>My Socials</h2>
-      <ul>
+      <ul id="socials-list">
         <li>
-          <img src={tumblrLogoBlack} />
+          <img
+            src={tumblrLogoBlack}
+            className="tumblr-icon-black"
+            alt="Tumblr:"
+          />
+          <img
+            src={tumblrLogoWhite}
+            className="tumblr-icon-white"
+            alt="Tumblr:"
+          />
+          <a href="https://www.tumblr.com/deltaruniccode">
+            @deltaruniccode (MaxCodes)
+          </a>
         </li>
       </ul>
     </main>
