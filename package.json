@@ -2,7 +2,7 @@
   "name": "maxcodes-dev-github-io",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@12.6.0",
+  "packageManager": "pnpm@12.8.1",
   "devEngines": {
     "runtime": {
       "name": "node",
@@ -33,6 +33,7 @@
     "@types/react-dom": "^19.2.7",
     "new-component": "^6.0.0",
     "typescript": "^5.9.3",
-    "vite": "^8.0.3"
+    "vite": "^8.0.3",
+    "vite-plugin-devtools-json": "^1.1.0"
   }
 }
