@@ -1,29 +1,41 @@
-img[class^="tumblr-icon"] {
-  height: 1lh;
+img.brand-icon {
+  max-height: 1lh;
+  max-width: 1lh;
   vertical-align: top;
-  margin-inline: 0.5em;
+  margin-inline: 0.5rem;
 
-  &.tumblr-icon-black {
+  &.icon-black {
     display: none;
   }
-  &.tumblr-icon-white {
+  &.icon-white {
     display: inline-block;
   }
 
   @media (prefers-color-scheme: light) {
-    &.tumblr-icon-black {
+    &.icon-black {
       display: inline-block;
     }
-    &.tumblr-icon-white {
+    &.icon-white {
       display: none;
     }
   }
 }
 
-ul#socials-list {
+ul#accounts-list {
   list-style: none;
 
-  img[class*="icon"] {
-    margin-inline-start: 0;
+  li {
+    display: grid;
+    grid-template-columns: 1lh auto;
+    grid-template-areas: "icon" "link";
+    column-gap: 0.5rem;
+  }
+  img.brand-icon {
+    margin: 0;
+    max-height: 1lh;
+    max-width: 1lh;
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
   }
 }
