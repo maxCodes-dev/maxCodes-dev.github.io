@@ -33,7 +33,10 @@ body {
 h1 {
   font-size: 3.2em;
   /* line-height: 1.1; */
-  margin-block: 1.66rem;
+  margin-block: calc(2 * 0.67rem);
+}
+h2 {
+  margin-block: 1.33rem 0.83rem;
 }
 
 button {
@@ -57,6 +60,9 @@ button:focus-visible {
 
 p {
   margin-block: 1em;
+}
+li {
+  margin-block: 0.83em;
 }
 
 header {
