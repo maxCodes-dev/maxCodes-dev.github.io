@@ -2,7 +2,7 @@
   "name": "maxcodes-dev-github-io",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@12.8.1",
+  "packageManager": "pnpm@12.9.1",
   "devEngines": {
     "runtime": {
       "name": "node",
@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "build": "react-router build",
+    "build": "react-router build && cp build/client/index.html build/client/404.html",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
