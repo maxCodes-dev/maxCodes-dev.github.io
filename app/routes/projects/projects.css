@@ -1,0 +1,33 @@
+@import url("../../theme.css");
+
+#projects-list {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+
+  justify-content: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-2);
+  scroll-padding: var(--spacing-2);
+  border-radius: var(--radius);
+  max-height: inherit;
+  overflow: auto;
+  forced-color-adjust: none;
+  outline: none;
+  width: 100%;
+  min-height: 6.25rem;
+  box-sizing: border-box;
+}
+
+.project-list-item {
+  border: 4px var(--border-color) solid;
+  padding: 0.5rem;
+
+  img {
+    max-height: 6rem;
+    margin: 0 auto;
+  }
+
+  article > :last-child {
+    margin-bottom: 0;
+  }
+}
