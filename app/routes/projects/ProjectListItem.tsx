@@ -13,7 +13,9 @@ function ProjectListItem({ project }: { project: Project }) {
         <Header>
           <h3>{project.name}</h3>
         </Header>
-        <img src={project.image} alt="" />
+        <div className="project-img-wrapper">
+          <img src={project.image} alt="" />
+        </div>
         <p>{project.description}</p>
         <p>
           <Link to={project.url}>{project.url}</Link>
