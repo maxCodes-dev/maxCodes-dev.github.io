@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home";
 
-// import rrIconDark from "@/assets/rr-icon-dark.svg";
-// import rrIconLight from "@/assets/rr-icon-light.svg";
+import { Link } from "react-router";
+
 import tumblrLogoWhite from "@/assets/tumblr-logo-white.png";
 import tumblrLogoBlack from "@/assets/tumblr-logo-black.png";
 import githubInvertocatWhite from "@/assets/GitHub_Invertocat_White.svg";
@@ -11,7 +11,7 @@ import "./home.css";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "MaxCodes Website" },
+    { title: "MaxCodes's Website" },
     { name: "description", content: "Portfolio/About Me site" },
   ];
 }
@@ -19,14 +19,14 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main>
-      <header>
+      <hgroup>
         <h1>MaxCodes</h1>
         <p>Maxwell Jackson</p>
-      </header>
+      </hgroup>
 
       <p>
-        Hello! I am Maxwell Jackson. I'm currently a freshman at Joseph P. Keefe
-        Technical School. I'm interested in programming and video games.
+        Hello! My name is Maxwell Jackson. I'm a freshman at Joseph P. Keefe
+        Technical School, and I'm interested in programming and video games.
       </p>
       <h2>Where to find me online:</h2>
       <ul id="accounts-list">
@@ -41,9 +41,9 @@ export default function Home() {
             className="tumblr-icon brand-icon icon-white"
             alt="Tumblr:"
           />
-          <a href="https://www.tumblr.com/deltaruniccode">
+          <Link to="https://www.tumblr.com/deltaruniccode">
             @deltaruniccode (MaxCodes)
-          </a>
+          </Link>
         </li>
         <li>
           <img
@@ -56,7 +56,7 @@ export default function Home() {
             className="github-icon-icon brand-icon icon-white"
             alt="GitHub:"
           />
-          <a href="https://github.com/maxCodes-dev">@maxCodes-dev</a>
+          <Link to="https://github.com/maxCodes-dev">@maxCodes-dev</Link>
         </li>
       </ul>
     </main>
